@@ -43,7 +43,6 @@ nav a a:hover {
   color: #38bdf8; 
 }
 
-/* Container */
 .register {
   max-width: 400px;
   margin: 5rem auto;
@@ -155,7 +154,7 @@ nav a a:hover {
 }
 #search-icon {
   position: absolute;
-  left: 1.6  rem;
+  left: 1.6rem;
   color: black;
   pointer-events: none; 
 }
@@ -296,7 +295,7 @@ table td {
 }
 
 /* Table action buttons */
-#update, #delete {
+#update, #delete, #details {
   padding: 0.5rem 1rem;
   border: none;
   border-radius: 8px;
@@ -306,9 +305,13 @@ table td {
   transition: opacity 0.3s ease;
 }
 
-#update {
+#details {
   background: #38bdf8;
   color: #fff;
+}
+#update{
+  background: #186420;
+  color: white;
 }
 
 #delete {

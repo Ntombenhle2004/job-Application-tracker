@@ -1,27 +1,40 @@
 {
   "users": [
     {
-      "id": 1,
-      "username": "testuser",
+      "id": "cf60",
+      "username": "nto@m.com",
+      "password": "12345"
+    },
+    {
+      "id": "7749",
+      "username": "lol@l.com",
       "password": "12345"
     }
   ],
   "jobs": [
     {
-      "id": 1,
-      "company": "Google",
-      "role": "Frontend Developer",
-      "status": "Applied",
-      "dateApplied": "2025-09-01",
-      "details": "Build UI with React, collaborate with team."
+      "id": "c26b",
+      "company": "qfre",
+      "role": "refer",
+      "status": "rejected",
+      "date": "2025-09-04",  
+      "details": "rrrrrrrrrrfr"
     },
     {
-      "id": 2,
-      "company": "Amazon",
-      "role": "Backend Developer",
-      "status": "Interviewed",
-      "dateApplied": "2025-08-28",
-      "details": "Work with Node.js and AWS cloud services."
+      "id": "5482",
+      "company": "refef",
+      "role": "frefre",
+      "status": "applied",
+      "date": "2025-09-01",
+      "details": "rff"
+    },
+    {
+      "id": "367c",
+      "company": "fvgfdvg",
+      "role": "bbb",
+      "status": "interviewed",
+      "date": "2025-09-22",
+      "details": "frgrefg"
     }
   ]
 }

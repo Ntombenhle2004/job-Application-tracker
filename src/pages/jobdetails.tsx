@@ -1,16 +1,84 @@
-import { Link } from "react-router";
+// import { Link } from "react-router";
+
+// export default function Jobdetails() {
+//   return (
+//     <div>
+//       <nav>
+//         <h2>JobTrack</h2>
+//         <a>
+//           <Link to="/home">Home</Link>
+       
+//           <Link to="/">Log out</Link>
+//         </a>
+//       </nav>
+//       <div className="mysection">
+//         <h2>Job details      </h2>
+//         <h3>Company name</h3>
+//         <p></p>
+//         <h3>Role</h3>
+//         <p></p>
+//         <h3>Status</h3>
+//         <p></p>
+//         <h3>Date applied</h3>
+//         <p></p>
+//         <h3>description</h3>
+//         <p></p>
+//       </div>
+//     </div>
+//   );
+// }
+
+
+import { useEffect, useState } from "react";
+import { useSearchParams, Link } from "react-router-dom";
+
+type Job = {
+  id: number;
+  company: string;
+  role: string;
+  status: string;
+  date: string;
+  details: string;
+};
 
 export default function Jobdetails() {
+  const [job, setJob] = useState<Job | null>(null);
+  const [searchParams] = useSearchParams();
+  const id = searchParams.get("id");
+
+  useEffect(() => {
+    if (id) {
+      fetch(`http://localhost:5000/jobs/${id}`)
+        .then((res) => res.json())
+        .then((data) => setJob(data));
+    }
+  }, [id]);
+
+  if (!job) return <p>Loading...</p>;
+
   return (
     <div>
       <nav>
         <h2>JobTrack</h2>
         <a>
           <Link to="/home">Home</Link>
-          <Link to="/register">Register</Link>
-          <Link to="/login">Login</Link>
+          <Link to="/">Log out</Link>
         </a>
       </nav>
+      <div className="mysection">
+        <h2>Job Details</h2>
+        <h3>Company name</h3>
+        <p>{job.company}</p>
+        <h3>Role</h3>
+        <p>{job.role}</p>
+        <h3>Status</h3>
+        <p>{job.status}</p>
+        <h3>Date applied</h3>
+        <p>{job.date}</p>
+        <h3>Description</h3>
+        <p>{job.details}</p>
+      </div>
     </div>
   );
 }
+

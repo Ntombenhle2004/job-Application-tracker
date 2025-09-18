@@ -6,7 +6,6 @@ export default function Landing() {
       <nav>
         <h2>JobTrack</h2>
         <a>
-          <Link to="/home">Home</Link>
           <Link to="/register">Register</Link>
           <Link to="/login">Login</Link>
         </a>
@@ -22,11 +21,12 @@ export default function Landing() {
             more on landing the role that’s right for you.
           </p>
           <button>
-            <Link to="/login">Get Started</Link>
+            <Link to="/register">Get Started</Link>
           </button>
+
         </div>
         <div className="row2">
-          <img src=""></img>
+          {/* <img src=""></img> */}
         </div>
       </div>
     </div>
