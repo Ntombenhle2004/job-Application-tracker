@@ -138,7 +138,7 @@
 // }
 
 import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 export default function Login() {
   const [username, setUsername] = useState("");
@@ -148,19 +148,25 @@ export default function Login() {
 
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
-
-    const res = await fetch(
-      ` http://localhost:3000/users?username=${username}&password=${password}`
-      
-    );
-    const user = await res.json();
-
-    if (user.length > 0) {
-      localStorage.setItem("user", JSON.stringify(user[0]));
-      setMessage("✅ Login successful!");
-      setTimeout(() => navigate("/home"), 1000);
-    } else {
-      setMessage("❌ Invalid credentials.");
+    setMessage("");
+    try {
+      const res = await fetch(
+        `http://localhost:3000/users?username=${encodeURIComponent(
+          username
+        )}&password=${encodeURIComponent(password)}`
+      );
+      const data = await res.json();
+      if (data.length === 1) {
+        // save user object as returned by json-server (has id)
+        localStorage.setItem("user", JSON.stringify(data[0]));
+        setMessage("✅ Login successful. Redirecting...");
+        setTimeout(() => navigate("/home"), 700);
+      } else {
+        setMessage("❌ Invalid username or password");
+      }
+    } catch (err) {
+      console.error("Login error:", err);
+      setMessage("❌ Login failed (check JSON Server)");
     }
   };
 
@@ -171,28 +177,33 @@ export default function Login() {
       </nav>
       <div className="register">
         <h1>Login</h1>
-        {message && <p>{message}</p>}
         <form onSubmit={handleLogin}>
           <input
             type="text"
+            id="username"
             placeholder="Username"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
             required
-          />{" "}
+          />
           <br />
           <input
             type="password"
+            id="password"
             placeholder="Password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
-          />{" "}
+          />
           <br />
-          <button type="submit">Login</button>
+          <button type="submit" id="login">
+            Login
+          </button>
         </form>
+
+        {message && <p>{message}</p>}
         <p>
-          Don’t have an account? <Link to="/register">Register</Link>
+          don't have an account? <Link to="/register">register</Link>
         </p>
       </div>
     </div>
