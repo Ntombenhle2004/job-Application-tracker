@@ -11,7 +11,8 @@ export default function Landing() {
         </a>
       </nav>
       <div className="mysection">
-        <div className="row1">
+        <div className="landing">
+         <div className="row1">
           <h1>Stay organized in your job search</h1>
           <p>
             Our Job Tracker App gives you the tools to organize your search with
@@ -23,11 +24,8 @@ export default function Landing() {
           <button>
             <Link to="/register">Get Started</Link>
           </button>
-
-        </div>
-        <div className="row2">
-          {/* <img src=""></img> */}
-        </div>
+         </div>
+       </div>
       </div>
     </div>
   );

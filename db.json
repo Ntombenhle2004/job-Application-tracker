@@ -1,40 +1,70 @@
 {
   "users": [
     {
-      "id": "cf60",
-      "username": "nto@m.com",
+      "id": "281b",
+      "username": "lol@l.com",
       "password": "12345"
     },
     {
-      "id": "7749",
-      "username": "lol@l.com",
+      "id": "88c5",
+      "username": "sa@s.com",
       "password": "12345"
     }
   ],
   "jobs": [
     {
-      "id": "c26b",
-      "company": "qfre",
-      "role": "refer",
+      "id": "70b4",
+      "company": "wsw",
+      "role": "sas",
       "status": "rejected",
-      "date": "2025-09-04",  
-      "details": "rrrrrrrrrrfr"
+      "date": "2025-09-27",
+      "description": "ss",
+      "userId": "281b"
     },
     {
-      "id": "5482",
-      "company": "refef",
-      "role": "frefre",
+      "id": "0466",
+      "company": "fhgj",
+      "role": "jhh",
       "status": "applied",
-      "date": "2025-09-01",
-      "details": "rff"
+      "date": "2025-09-04",
+      "description": "sxcdsc",
+      "userId": "281b"
     },
     {
-      "id": "367c",
-      "company": "fvgfdvg",
-      "role": "bbb",
+      "id": "d0e8",
+      "company": "fdgd",
+      "role": "fdvd",
       "status": "interviewed",
-      "date": "2025-09-22",
-      "details": "frgrefg"
+      "date": "2025-09-05",
+      "description": "fdgvfd",
+      "userId": "88c5"
+    },
+    {
+      "id": "be6d",
+      "company": "knk",
+      "role": "kmk",
+      "status": "applied",
+      "date": "2025-09-27",
+      "description": "kokl",
+      "userId": "281b"
+    },
+    {
+      "id": "1f8b",
+      "company": "hghh",
+      "role": "bcf",
+      "status": "applied",
+      "date": "2025-09-19",
+      "description": "hgjhg",
+      "userId": "281b"
+    },
+    {
+      "id": "7b3a",
+      "company": "hey",
+      "role": "bj",
+      "status": "applied",
+      "date": "2025-09-18",
+      "description": "mn",
+      "userId": "281b"
     }
   ]
 }

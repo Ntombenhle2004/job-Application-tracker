@@ -18,14 +18,12 @@ nav {
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
-
 nav h2 {
   color: #f8fafc;
   font-size: 1.5rem;
   font-weight: bold;
   margin: 0;
 }
-
 
 nav a {
   display: flex;
@@ -54,7 +52,6 @@ nav a a:hover {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Heading */
 .register h1 {
   margin-bottom: 1.5rem;
   font-size: 1.8rem;
@@ -62,7 +59,7 @@ nav a a:hover {
   color: #1e293b;
 }
 
-/* Inputs */
+
 .register input {
   width: 100%;
   padding: 0.8rem;
@@ -79,7 +76,6 @@ nav a a:hover {
   box-shadow: 0 0 6px rgba(56, 189, 248, 0.4);
 }
 
-/* Buttons */
 .register button {
   width: 100%;
   padding: 0.9rem;
@@ -98,14 +94,12 @@ nav a a:hover {
   background-color: #334155;
 }
 
-/* Paragraph under form */
 .register p {
   margin-top: 1rem;
   font-size: 0.9rem;
   color: #475569;
 }
 
-/* Links */
 .register p a {
   color: #38bdf8;
   text-decoration: none;
@@ -116,16 +110,13 @@ nav a a:hover {
   text-decoration: underline;
 }
 
-/* Main section */
 .mysection {
- 
   margin: 2rem auto;
   padding: 1.5rem;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #1e293b;
 }
 
-/* Search bar container */
 .SearchBar {
   position: relative;
   display: flex;
@@ -138,7 +129,6 @@ nav a a:hover {
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
-/* Search input */
 #search {
   flex: 1;
   padding: 0.6rem 0.8rem 0.6rem 2rem;
@@ -159,7 +149,6 @@ nav a a:hover {
   pointer-events: none; 
 }
 
-/* Select dropdowns */
 #filterby, #sortby {
   padding: 0.6rem 0.8rem;
   border-radius: 8px;
@@ -174,7 +163,6 @@ nav a a:hover {
   border-color: #38bdf8;
 }
 
-/* Add Job button */
 .btn {
   display: inline-block;
   margin: 1rem 0;
@@ -192,7 +180,6 @@ nav a a:hover {
   background: #334155;
 }
 
-/* Modal overlay */
 .modal {
   display: none;
   position: fixed;
@@ -205,7 +192,6 @@ nav a a:hover {
   display: block;
 }
 
-/* Modal content */
 .modal-content {
   background: #fff;
   margin: 5% auto;
@@ -216,7 +202,7 @@ nav a a:hover {
   animation: fadeIn 0.3s ease;
 }
 
-/* Close button */
+
 .close {
   float: right;
   font-size: 1.5rem;
@@ -228,7 +214,7 @@ nav a a:hover {
   color: #ef4444;
 }
 
-/* Form inputs */
+
 .modal-content input,
 .modal-content select,
 .modal-content textarea {
@@ -248,7 +234,6 @@ nav a a:hover {
   box-shadow: 0 0 4px rgba(56,189,248,0.4);
 }
 
-/* Submit button */
 .modal-content button {
   width: 100%;
   padding: 0.9rem;
@@ -267,7 +252,6 @@ nav a a:hover {
   background: #334155;
 }
 
-/* Table */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -294,7 +278,7 @@ table td {
   color: #334155;
 }
 
-/* Table action buttons */
+
 #update, #delete, #details {
   padding: 0.5rem 1rem;
   border: none;
@@ -323,184 +307,131 @@ table td {
   opacity: 0.85;
 }
 
-/* Animations */
-@keyframes fadeIn {
-  from { opacity: 0; transform: scale(0.95); }
-  to { opacity: 1; transform: scale(1); }
+.row1 h1 {
+  font-size: 2.5rem;
+  color: #222;
+  margin-bottom: 1.5rem;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .mysection{
-
+.row1 p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+  color: #555;
+  max-width: 600px;
 }
 
-
-.SearchBar {
-  position: relative;
-  display: flex;
-  align-items: center;
-  background-color: #EDF2FA;
-  border-radius: 25px;
-  margin-top: 1rem;
-  width: 50%;
-}
-
-#search {
-  width: 100%;
-  padding: 10px 10px 10px 35px; 
-  background-color: transparent;
+.row1 button {
+  background: #334155;
   border: none;
-  font-size: 14px;
-  outline: none;
+  padding: 0.8rem 1.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
 }
 
-#search-icon {
-  position: absolute;
-  left: 12px;
-  color: black;
-  pointer-events: none; 
+.row1 button:hover {
+  background: #0097a7;
 }
 
+.row1 button a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+}
 
-    .btn {
-      /* display: inline-block; */
-      /* padding: 10px 20px;
-      background: #007BFF;
-      color: #fff;
-      border-radius: 5px;
-      text-decoration: none;
-    
-      margin-top: 2rem; */
-    /* }  */
-    
-    /* .modal {
-      display: none;
-      position: fixed;
-      z-index: 1;
-      left: 0; top: 0;
-      width: 100%; height: 100%;
-      background: rgba(0,0,0,0.6);
-    }
+.section {
+  max-width: 700px;       
+  margin: 50px auto;      
+  padding: 30px;         
+  background-color: #f8fafc; 
+  border-radius: 10px;    
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
 
-    
-    .modal-content {
-      background: #fff;
-      margin: 5% auto;
-      padding: 20px;
-      border-radius: 8px;
-      width: 350px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-    }
+.section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
 
-  
-    .close {
-      float: right;
-      font-size: 24px;
-      text-decoration: none;
-      color: #333;
-    }
-    .close:hover {
-      color: red;
-    }
+.section h3 {
+  font-size: 1.2em;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: #555;
+  padding-bottom: 3px;
+}
 
-    .modal:target {
-      display: block;
-    }
+.section p {
+  font-size: 1em;
+  color: #444;
+  margin-bottom: 10px;
+  line-height: 1.5;
+  border-bottom: 1px solid #ddd; 
+}
 
+ 
+@media (max-width: 480px) {
+  #update, #delete, #details {
+    display: block;
+    width: 90%;
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+nav {
+    width: 100vw;
+    margin: 0;
+    padding: 0.5rem 1rem;
+    box-sizing: border-box;
+  }
 
-    form input, form select, form button {
-      width: 100%;
-      padding: 10px;
-      margin: 8px 0;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
+  .SearchBar {
+    width: 100%;
+    margin: 0;
+    padding: 0.6rem 0;
+    background: transparent;   
+    box-shadow: none;          
+    border-radius: 0;        
+    box-sizing: border-box;
 
-    form button {
-      background: #007BFF;
-      color: white;
-      border: none;
-      cursor: pointer;
-    }
-    form button:hover {
-      background: #0056b3;
-    }
+  }
+  #search{
+    padding-left: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  #update, #delete, #details {
+    display: inline-block;
+    width: auto;
+    margin-right: 0.5rem;
+    margin-bottom: 0.3rem;
+  }
+}
 
-      
-     table {
-      width: 100%;
-      border-collapse: collapse;
-      background: white;
-      border-radius: 12px;
-      overflow: hidden;
-    }
+@media (max-width: 1024px) {
+  #update, #delete, #details {
+    display: inline-block;
+    margin-right: 0.5rem;
+    margin-bottom: 0.3rem;
+  }
+}
 
-    thead {
-      background: #f0f2f5;
-    }
+@media (max-width: 1200px) {
+  #update, #delete, #details {
+    display: inline-block;
+    margin-right: 0.5rem;
+    margin-bottom: 0.3rem;
+  }
+}
 
-    th {
-      text-align: left;
-      padding: 14px;
-      font-size: 15px;
-      font-weight: 600;
-      color: #333;
-      border-bottom: 2px solid #e0e0e0;
-    }
-
-    td {
-      padding: 14px;
-      font-size: 14px;
-      color: #444;
-      border-bottom: 1px solid #e9ecef;
-    }
-
-    tbody tr:hover {
-      background: #fafafa;
-    }
-
-   
-    button {
-      padding: 6px 12px;
-      border: 1px solid transparent;
-      border-radius: 6px;
-      cursor: pointer;
-      font-size: 13px;
-      font-weight: 500;
-      margin-right: 6px;
-      transition: all 0.2s ease-in-out;
-    } */
-
-
-
-/* --- Navbar --- */
+@media (min-width: 1201px) {
+  #update, #delete, #details {
+    display: inline-block;
+    margin-right: 0.6rem;
+    margin-bottom: 0.3rem;
+  }
+}
