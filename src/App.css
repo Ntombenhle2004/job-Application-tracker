@@ -375,10 +375,6 @@ table td {
 }
 
 
-
-
-
-
 .landing-container {
   display: flex;
   flex-direction: column;
@@ -387,6 +383,10 @@ table td {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.land-links{
+  display: flex;
+  gap: 2rem;
+}
 
 .hero {
   display: flex;

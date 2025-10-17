@@ -31,15 +31,6 @@
       "userId": "281b"
     },
     {
-      "id": "d0e8",
-      "company": "fdgd",
-      "role": "fdvd",
-      "status": "interviewed",
-      "date": "2025-09-05",
-      "description": "fdgvfd",
-      "userId": "88c5"
-    },
-    {
       "id": "be6d",
       "company": "knk",
       "role": "kmk",
@@ -65,6 +56,24 @@
       "date": "2025-09-18",
       "description": "mn",
       "userId": "281b"
+    },
+    {
+      "id": "3dd1",
+      "company": "Ntombenhle Ngcobo",
+      "role": "jhh",
+      "status": "applied",
+      "date": "2025-10-03",
+      "description": "wedw3",
+      "userId": "88c5"
+    },
+    {
+      "id": "0b2a",
+      "company": "w",
+      "role": "wd",
+      "status": "applied",
+      "date": "2025-10-07",
+      "description": "dwq",
+      "userId": "88c5"
     }
   ]
 }

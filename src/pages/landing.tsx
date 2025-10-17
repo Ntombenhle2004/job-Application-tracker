@@ -13,9 +13,15 @@ const LandingPage: React.FC = () => {
             accepted, or rejected. Organize and monitor your progress all in one
             place.
           </p>
-          <Link to="/register" className="cta-button">
-            Get Started
-          </Link>
+          <div className="land-links">
+            <Link to="/register" className="cta-button">
+              Get Started
+            </Link>
+
+            <Link to="/login" className="cta-button">
+              login
+            </Link>
+          </div>
         </div>
         <div className="hero-image">
           <img
