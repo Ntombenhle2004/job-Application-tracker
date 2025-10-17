@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link, useNavigate, useSearchParams } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 
 type Job = {
   id?: number;
@@ -17,7 +17,7 @@ export default function Home() {
   const [editingJob, setEditingJob] = useState<Job | null>(null);
 
   const [searchParams, setSearchParams] = useSearchParams();
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   const rawUser = localStorage.getItem("user");
   const user = rawUser ? JSON.parse(rawUser) : null;
@@ -64,7 +64,7 @@ export default function Home() {
       setJobs(data);
     } catch (err) {
       console.error("Fetch jobs error:", err);
-      setMessage("❌ Failed to load jobs (check JSON Server)");
+      setMessage("Failed to load jobs (check JSON Server)");
     }
   };
 
