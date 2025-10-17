@@ -374,6 +374,127 @@ table td {
   border-bottom: 1px solid #ddd; 
 }
 
+
+
+
+
+
+.landing-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #f8fafc; 
+  color: #1e293b; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6rem 2rem;
+  background-color: #1F293A; 
+  color: #f8fafc; 
+  border-radius: 12px;
+  flex-wrap: wrap;
+}
+
+.hero-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #1F293A; 
+  color: #f8fafc;
+  padding: 0.9rem 2rem;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  border: 1px solid #f8fafc;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #334155; 
+}
+
+
+.hero-image img {
+  max-width: 400px;
+  border-radius: 12px;
+  margin-top: 1rem;
+  border: 2px solid #f8fafc; 
+}
+
+
+.features {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #f1f5f9; }
+
+.features h2 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  color: #1e293b;
+}
+
+.feature-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.card {
+  background-color: #1F293A; 
+  color: #f8fafc;
+  padding: 2rem;
+  border-radius: 12px;
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+
+.cta {
+  background-color: #1F293A;
+  color: #f8fafc;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.cta h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #1F293A; 
+  color: #f8fafc;
+  font-size: 0.9rem;
+}
+
+
  
 @media (max-width: 480px) {
   #update, #delete, #details {
@@ -435,3 +556,8 @@ nav {
     margin-bottom: 0.3rem;
   }
 }
+
+
+
+
+
