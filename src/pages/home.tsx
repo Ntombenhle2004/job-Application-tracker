@@ -371,7 +371,7 @@ export default function Home() {
             ))}
             {jobs.length === 0 && (
               <tr>
-                <td colSpan={6}>No jobs found — add some!</td>
+                <td colSpan={6}>No jobs found, add some</td>
               </tr>
             )}
           </tbody>
