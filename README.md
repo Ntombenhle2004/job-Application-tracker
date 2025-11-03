@@ -57,19 +57,24 @@ src/
    npm install
    ```
 
-3. **Run development server**
+3. **Run Json server**
+  ```bash 
+  npx json-server db.json
+  ```
+
+4. **Run development server**
    ```bash
    npm run dev
    ```
 
    The app will be available at: [http://localhost:5173](http://localhost:5173)
 
-4. **Build for production**
+5. **Build for production**
    ```bash
    npm run build
    ```
 
-5. **Preview production build**
+6. **Preview production build**
    ```bash
    npm run preview
    ```
