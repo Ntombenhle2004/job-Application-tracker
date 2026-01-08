@@ -1,8 +1,0 @@
-services:
-  - type: web
-    name: job-tracker-json-server
-    env: node
-    plan: free
-    buildCommand: npm install
-    startCommand: npm start
-    autoDeploy: true

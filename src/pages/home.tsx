@@ -32,7 +32,7 @@ export default function Home() {
       const params = new URLSearchParams();
       params.set("userId", String(user.id));
 
-      const url = `http://localhost:3000/jobs?${params.toString()}`;
+      const url = ` https://json-server-e3b5.onrender.com/jobs?${params.toString()}`;
       const res = await fetch(url);
       let data = await res.json();
 
@@ -97,7 +97,7 @@ export default function Home() {
     };
 
     try {
-      const res = await fetch("http://localhost:3000/jobs", {
+      const res = await fetch(" https://json-server-e3b5.onrender.com/jobs", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(newJob),
@@ -117,9 +117,12 @@ export default function Home() {
     if (!id) return;
     if (!window.confirm("Are you sure you want to delete this job?")) return;
     try {
-      const res = await fetch(`http://localhost:3000/jobs/${id}`, {
-        method: "DELETE",
-      });
+      const res = await fetch(
+        ` https://json-server-e3b5.onrender.com/jobs/${id}`,
+        {
+          method: "DELETE",
+        }
+      );
       if (!res.ok) throw new Error("DELETE failed");
       setMessage("Job deleted");
       fetchJobs();
@@ -138,11 +141,14 @@ export default function Home() {
     if (!editingJob?.id) return;
 
     try {
-      const res = await fetch(`http://localhost:3000/jobs/${editingJob.id}`, {
-        method: "PUT",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(editingJob),
-      });
+      const res = await fetch(
+        ` https://json-server-e3b5.onrender.com/jobs/${editingJob.id}`,
+        {
+          method: "PUT",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(editingJob),
+        }
+      );
       if (!res.ok) throw new Error("PUT failed");
       setMessage("Job updated");
       setEditingJob(null);

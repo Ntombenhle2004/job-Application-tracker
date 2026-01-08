@@ -17,7 +17,7 @@ export default function JobDetails() {
   const [job, setJob] = useState<Job | null>(null);
 
   useEffect(() => {
-    fetch(`http://localhost:3000/jobs/${id}`)
+    fetch(` https://json-server-e3b5.onrender.com/jobs/${id}`)
       .then((res) => res.json())
       .then((data) => setJob(data))
       .catch((err) => console.error("Error fetching job details:", err));

@@ -12,7 +12,7 @@ export default function Login() {
     setMessage("");
     try {
       const res = await fetch(
-        `http://localhost:3000/users?username=${encodeURIComponent(
+        ` https://json-server-e3b5.onrender.com/users?username=${encodeURIComponent(
           username
         )}&password=${encodeURIComponent(password)}`
       );

@@ -13,7 +13,9 @@ export default function Register() {
 
     try {
       const check = await fetch(
-        `http://localhost:3000/users?username=${encodeURIComponent(userName)}`
+        ` https://json-server-e3b5.onrender.com/users?username=${encodeURIComponent(
+          userName
+        )}`
       );
       const existing = await check.json();
       if (existing.length > 0) {
@@ -21,7 +23,7 @@ export default function Register() {
         return;
       }
 
-      const res = await fetch("http://localhost:3000/users", {
+      const res = await fetch(" https://json-server-e3b5.onrender.com/users", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ username: userName, password }),
@@ -32,7 +34,7 @@ export default function Register() {
       setTimeout(() => navigate("/login"), 1100);
     } catch (err) {
       console.error("Register error:", err);
-      setMessage("Failed to register (check JSON Server on port 5000).");
+      setMessage("Failed to register (check JSON Server).");
     }
   };
 
