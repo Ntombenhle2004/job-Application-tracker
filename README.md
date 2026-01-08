@@ -56,7 +56,7 @@ src/
    ```bash
    npm install
    ```
-
+   
 3. **Run Json server**
   ```bash 
   npx json-server db.json
